@@ -1,6 +1,12 @@
 //include headers and libraries
 #include "Library.h"
+#include <iostream>
 //implement class functions
+Library::Library(){
+    for(int i = 0; i < 10; i++){
+        books[i] = "";
+    }
+}
 bool Library::addBook(string bookName){
     //check if the book already exists
     for(int i = 0; i < 10; i++){
